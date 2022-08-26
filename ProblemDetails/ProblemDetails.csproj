@@ -12,5 +12,9 @@
 
   <ItemGroup>
     <None Remove="Hellang.Middleware.ProblemDetails" />
+    <None Remove="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
 </Project>

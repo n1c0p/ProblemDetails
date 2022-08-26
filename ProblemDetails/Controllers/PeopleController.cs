@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using ProblemDetails.Entities;
 
 namespace ProblemDetail.Controllers;
 
@@ -28,12 +29,3 @@ public class PeopleController : ControllerBase
     public IActionResult GetHttpEXception() => throw new HttpRequestException("errore api");
 
 }
-
-public class Person
-{
-    [Required]
-    public string Name { get; set; }
-
-    public string LastName { get; set; }
-}
-
